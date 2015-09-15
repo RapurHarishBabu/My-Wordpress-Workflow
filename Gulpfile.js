@@ -30,7 +30,7 @@ var gulp			= require('gulp'),
 =            Del Task            =
 ================================*/
 gulp.task('del', function() {
-	del(['Fonts','Images','Styles','Scripts','*.php','*.html']).then(function (paths) {
+	del(['Fonts','Images','Styles','Scripts','*.php','*.html','*.css']).then(function (paths) {
 	    console.log('Deleted files/folders:\n', paths.join('\n'));
 	});
 });
@@ -62,8 +62,8 @@ gulp.task('styles', function() {
 			],
             	cascade: false
         }))
+        .pipe(csso())	/* Css3 Optimizer */
         .pipe(plumber.stop())
-        .pipe(csso()) /* Css3 Optimizer */
 		.pipe(gulp.dest('./Styles/'))
      	.pipe(livereload({ start: true }));
 
