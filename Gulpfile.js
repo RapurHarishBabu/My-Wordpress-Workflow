@@ -14,13 +14,9 @@ var gulp			= require('gulp'),
 	watch			= require('gulp-watch'),
 	merge 			= require('merge-stream'),
 	jquery 			= require('gulp-jquery'),
-	uglify 			= require('gulp-uglify'),
 	imagemin 		= require('gulp-imagemin'),
-	rename 			= require('gulp-rename'),
-	browserSync 	= require('browser-sync'),
 	plumber			= require('gulp-plumber'),
 	spritesmith 	= require("gulp.spritesmith"),
-	svgSprite       = require('gulp-svg-sprite'),
 	livereload 		= require('gulp-livereload'),
 	autoprefixer 	= require('gulp-autoprefixer');
 

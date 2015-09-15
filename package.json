@@ -1,28 +1,26 @@
 {
-  "name": "workflow",
+  "name": "My-Wordpress-Workflow",
   "version": "1.0.0",
-  "description": "THis is the Place all The Awesome Things Will Happened :)",
-  "main": "index.js",
+  "description": "This is a Front-End Workflow for Wordpress Theme",
+  "main": "Gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "dont-know"
+    "url": "https://github.com/RapurHarishBabu/My-Wordpress-Workflow.git"
   },
   "keywords": [
-    "my",
-    "workflow",
-    "web",
-    "design",
-    "web",
-    "developer",
-    "workflow"
+    "Wordpress",
+    "Workflow",
+    "Wordpress Framework",
+    "Wordpress Workflow",
+    "Web Design",
+    "Wordpress Theme"
   ],
   "author": "Rapur Harish Babu",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.9.3",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
@@ -36,11 +34,9 @@
     "gulp-jquery": "^1.0.2",
     "gulp-livereload": "^3.8.0",
     "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-scss": "^1.2.0",
     "gulp-spritesmith": "0.0.2",
-    "gulp-uglify": "^1.4.1",
     "gulp-watch": "^4.3.5",
     "gulp.spritesmith": "^4.1.0",
     "imagemin-pngquant": "^4.2.0",
