@@ -3,8 +3,8 @@ node_modules/
 design/
 .gulp-scss-cache/
 .sass-cache/
-$Dev/design/
-$Dev/Fonts/Brandon_Text/
-$Dev/Styles/Fonts/Brandon_Text.scss
+App/design/
+App/Fonts/Brandon_Text/
+App/Styles/Fonts/Brandon_Text.scss
 Fonts/Brandon_Text/
 

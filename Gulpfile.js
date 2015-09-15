@@ -39,7 +39,7 @@ gulp.task('del', function() {
 ==================================*/
 /* Sass Task*/
 gulp.task('styles', function() {
-	gulp.src('./$Dev/styles/*.sass')
+	gulp.src('./App/styles/*.sass')
 		.pipe(plumber())
 		.pipe(sass({
 			// outputStyle: 'expended'
@@ -64,7 +64,7 @@ gulp.task('styles', function() {
      	.pipe(livereload({ start: true }));
 
 /* Scss Task */
-	gulp.src('./$Dev/*.scss')
+	gulp.src('./App/*.scss')
 		.pipe(plumber())
 		.pipe(scss())
 		.pipe(autoprefixer({
@@ -95,7 +95,7 @@ gulp.task('styles', function() {
 =====================================*/
 /* PHP Task */
 gulp.task('jadephp', function() {
-	gulp.src('./$Dev/*.jade')
+	gulp.src('./App/*.jade')
 		.pipe(plumber())
 		.pipe(jadephp({
 			pretty: true
@@ -110,7 +110,7 @@ gulp.task('jadephp', function() {
 gulp.task('jade', function() {
 	var YOUR_LOCALS = {};
 
-	gulp.src('./$Dev/*.jade')
+	gulp.src('./App/*.jade')
 		.pipe(plumber())
 		.pipe(jade({
 			locals: YOUR_LOCALS,
@@ -129,7 +129,7 @@ gulp.task('jade', function() {
 =            Sprite Task            =
 ===================================*/
 gulp.task('sprite', function () {
-	var spriteData = gulp.src('./$Dev/Images/Sprite/*.png')
+	var spriteData = gulp.src('./App/Images/Sprite/*.png')
 		.pipe(spritesmith({
 			imgName: 'sprite.png',
 			cssName: 'sprite.css'
@@ -154,7 +154,7 @@ gulp.task('jquery', function () {
         release: 2, //jQuery 2 
         flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
     })
-    .pipe(gulp.dest('./$Dev/Scripts/'));
+    .pipe(gulp.dest('./App/Scripts/'));
     // creates ./public/vendor/jquery.custom.js 
 });
 /*=====  End of Jquery Task  ======*/
@@ -166,11 +166,11 @@ gulp.task('jquery', function () {
 =================================*/
 gulp.task('copy', function() {
 /* Fonts */
-	gulp.src('./$Dev/fonts/**/*.*')
+	gulp.src('./App/fonts/**/*.*')
 		.pipe(gulp.dest('./Fonts'));
 
 /* Scripts */
-	gulp.src('./$Dev/scripts/**/*.*')
+	gulp.src('./App/scripts/**/*.*')
 		.pipe(gulp.dest('./Scripts'));
 });
 /*=====  End of Copy Task  ======*/
@@ -181,7 +181,7 @@ gulp.task('copy', function() {
 =            Image Task            =
 ==================================*/
 gulp.task('images', function () {
-    return gulp.src('./$dev/Images/*')
+    return gulp.src('./App/Images/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -212,13 +212,13 @@ gulp.task('browser-sync', function() {
 ==================================*/
 gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch('$Dev/styles/**/*.sass', ['styles']);
-	gulp.watch('$Dev/*.scss', ['styles']);
-	gulp.watch('$Dev/*.jade', ['jade']);
-	gulp.watch('$Dev/*.jade', ['jadephp']);
-	gulp.watch('$Dev/fonts/**/*.*', ['copy']);
-	gulp.watch('$Dev/scripts/**/*.*', ['copy']);
-	gulp.watch('$Dev/images/*.*', ['images']);
+	gulp.watch('App/styles/**/*.sass', ['styles']);
+	gulp.watch('App/*.scss', ['styles']);
+	gulp.watch('App/*.jade', ['jade']);
+	gulp.watch('App/*.jade', ['jadephp']);
+	gulp.watch('App/fonts/**/*.*', ['copy']);
+	gulp.watch('App/scripts/**/*.*', ['copy']);
+	gulp.watch('App/images/*.*', ['images']);
 });
 /*=====  End of Watch Task  ======*/
 
