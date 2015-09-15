@@ -1,0 +1,10 @@
+*.sublime*
+node_modules/
+design/
+.gulp-scss-cache/
+.sass-cache/
+$Dev/design/
+$Dev/Fonts/Brandon_Text/
+$Dev/Styles/Fonts/Brandon_Text.scss
+Fonts/Brandon_Text/
+

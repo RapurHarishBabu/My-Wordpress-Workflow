@@ -1,0 +1,120 @@
+@import ../material_design/color
+@import ../material_design/shadow
+@import ../fonts/Roboto
+
+a
+	text-decoration: none
+	&:link
+		color: $link
+	&:hover
+		color: $link
+	&:visited
+		color: $visited
+// Heading Style
+h1,h2,h3,h4,h5,h6
+	font-family: $font
+	font-weight: bold
+	color: $grey-900
+	display: block
+p
+	color: $grey-800
+@media screen and (min-width: 768px)
+	h1
+		font-size: 28px
+		margin: 5px 0px 5px 0px
+	h2
+		font-size: 25px
+		margin: 5px 0px 5px 0px
+	h3
+		font-size: 22px
+		margin: 5px 0px 5px 0px
+	h4
+		font-size: 19px
+		margin: 5px 0px 5px 0px
+	h5
+		font-size: 16px
+		margin: 5px 0px 5px 0px
+	h6
+		font-size: 13px
+		margin: 5px 0px 5px 0px
+	p
+		font-size: 17px
+		line-height: 24px
+		font-family: $font
+@media screen and (min-width: 451px) and (max-width: 767px)
+	h1
+		font-size: 22px
+		margin: 5px 0px 5px 0px
+	h2
+		font-size: 20px
+		margin: 5px 0px 5px 0px
+	h3
+		font-size: 17px
+		margin: 5px 0px 5px 0px
+	h4
+		font-size: 15px
+		margin: 5px 0px 5px 0px
+	h5
+		font-size: 13px
+		margin: 5px 0px 5px 0px
+	h6
+		font-size: 11px
+		margin: 5px 0px 5px 0px
+	p
+		font-size: 15px
+		line-height: 24px
+		font-family: $font
+@media screen and (max-width: 450px)
+	h1
+		font-size: 19px
+		line-height: 20px
+		margin: 5px 0px 5px 0px
+	h2
+		font-size: 17px
+		line-height: 18px
+		margin: 5px 0px 5px 0px
+	h3
+		font-size: 15px
+		line-height: 16px
+		margin: 5px 0px 5px 0px
+	h4
+		font-size: 13px
+		line-height: 14px
+		margin: 5px 0px 5px 0px
+	h5
+		font-size: 11px
+		line-height: 12px
+		margin: 5px 0px 5px 0px
+	h6
+		font-size: 9px
+		line-height: 10px
+		margin: 5px 0px 5px 0px
+	p
+		font-size: 13px
+		line-height: 18px
+		font-family: $font
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+code
+	padding: 1.5px 5px
+	border-radius: 5px
+	border: 1px solid $grey-500
+	color: $black
+	background-color: $grey-200
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+video, img, iframe
+  max-width: 100%
+  height: auto
+ul, ol, li 
+	color: $grey-900
